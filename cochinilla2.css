@@ -71,24 +71,28 @@ header {
 }
 
 .logo {
-    display: flex;
+     display: flex;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
     font-size: 1.5rem;
     color: var(--cochinilla-gold);
     text-decoration: none;
     transition: transform 0.3s ease;
+    margin-right: 40px;
 }
+
 
 .logo:hover {
     transform: scale(1.05);
 }
 
 .logo img {
-    height: 40px;
+   height: 40px;
+    width: 40px; /* Ensure width matches height for a perfect circle */
     margin-right: 12px;
     transition: all 0.4s ease;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 /* Menú principal */
